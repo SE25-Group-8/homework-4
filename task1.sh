@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Find the process ID (PID) of infinite.sh
-PID=$(ps | grep 'sh' | awk '{print $1}')
+PID=$(ps | grep ' sh' | awk '{print $1}')
 
 # Kill the process if found
 if [ ! -z "$PID" ]; then
