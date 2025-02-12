@@ -1,0 +1,1 @@
+gawk 'NR <=5' titanic.csv 
