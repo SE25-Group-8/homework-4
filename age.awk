@@ -1,15 +1,14 @@
-gawk -F, '
 BEGIN {
+    FS = ',';
     sum = 0;
     count = 0;
 }
 
 NR > 1 {  
-    sum += $6;
+    sum += $7;
     count++;
 }
 
 END {
-    print sum / count;
+    print "Average Age of Survivors: sum / count;
 }
-' titanic.csv 
